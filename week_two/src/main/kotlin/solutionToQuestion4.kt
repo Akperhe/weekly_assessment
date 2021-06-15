@@ -11,7 +11,7 @@ class Phone constructor(_brand: String = "Unknown", _ram: String = "Unknown", _s
                         _size: String="Unknown",_color: String ="Unknown" ) {
     // the above is a primary constructor
     //an example of instance variables
-    var brand = _brand
+    private var brand = _brand
     var ram = _ram
     var storage = _storage
     var size = _size
@@ -25,13 +25,20 @@ class Phone constructor(_brand: String = "Unknown", _ram: String = "Unknown", _s
         size="60x67x53"
         color="red"
     }
+
+    fun getBrand() : String{
+        return brand
+    }
+    fun setBrand(brand : String) {
+         this.brand = brand
+    }
 }
 
 class Car constructor(_brand: String = "Unknown", _model: String = "Unknown", _year: Int=0,
                       _color: String="Unknown",_maxSpeed: Int=0  ) {
     // the above is a primary constructor
     //an example of instance variables
-    var brand = _brand
+    private var brand = _brand
     var model = _model
     var year = _year
     var color = _color
@@ -45,6 +52,12 @@ class Car constructor(_brand: String = "Unknown", _model: String = "Unknown", _y
         color = "black"
         maxSpeed = 240
     }
+    fun getBrand() : String{
+        return brand
+    }
+    fun setBrand(brand : String) {
+        this.brand = brand
+    }
 }
 
 class Engine constructor(_speedRpm: Double=0.0 , _powerMw: Double=0.0 , _torque: Double=0.0 ,
@@ -55,7 +68,7 @@ class Engine constructor(_speedRpm: Double=0.0 , _powerMw: Double=0.0 , _torque:
     var powerMw = _powerMw
     var torque = _torque
     var weightTon = _weightTon
-    var application = _application
+    private var application = _application
 
     // initializer block
     init {
@@ -66,13 +79,19 @@ class Engine constructor(_speedRpm: Double=0.0 , _powerMw: Double=0.0 , _torque:
         application = "Marine"
 
     }
+    fun getApplication() : String{
+        return application
+    }
+    fun setApplication(brand : String) {
+        this.application = application
+    }
 }
 
 class Animal constructor(_name: String = "Unknown", _classs: String = "Unknown", _isDomestic: Boolean = false,
                          _noOfLeg: Int=0, _color: String ="Unknown" ) {
     // the above is a primary constructor
     //an example of instance variables
-    var name = _name
+    private var name = _name
     var classs = _classs
     var isDomestic = _isDomestic
     var noOfLeg = _noOfLeg
@@ -86,6 +105,12 @@ class Animal constructor(_name: String = "Unknown", _classs: String = "Unknown",
         noOfLeg = 4
         color = "multi-color"
     }
+    fun getName() : String{
+        return name
+    }
+    fun setName(name : String) {
+        this.name = name
+    }
 }
 
 class Drone constructor(_lat: Double = 0.0, _long: Double = 0.0, _speed: Double = 0.0,
@@ -96,7 +121,7 @@ class Drone constructor(_lat: Double = 0.0, _long: Double = 0.0, _speed: Double 
     var long = _long
     var speed = _speed
     var elevation = _elevation
-    var isAutoMode = _isAutoMode
+    private var isAutoMode = _isAutoMode
 
     // initializer block
     init {
@@ -105,5 +130,11 @@ class Drone constructor(_lat: Double = 0.0, _long: Double = 0.0, _speed: Double 
         speed = 340.7
         elevation = 56.00
         isAutoMode = false
+    }
+    fun getIsAutoMode() : Boolean{
+        return isAutoMode
+    }
+    fun setIsAutoMode(isAutoMode : Boolean) {
+        this.isAutoMode = isAutoMode
     }
 }
