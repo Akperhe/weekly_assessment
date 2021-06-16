@@ -1,63 +1,54 @@
 /*
-Assign values to the instance variables in these classes
+Question 5 -> Assign values to the instance variables in these classes
 and then print out the values in the main function by
 accessing the values. NB: Use getters and setters.
  */
-
 fun main() {
-    /* all setter have been done inside the classes as instructed and
-    all getter are used here with string template
-    NB: getter and setter are default and auto generated in classes
-    */
-    // the below create an instances of the classes and uses default method/function "setter" to assign value to class with public identifiers
-    var phone: Phone = Phone()
-    phone.size="55x23x12"
-    phone.ram="12gb"
-    phone.color="Crazie Blue"
-    phone.storage="520gb"
-    phone.setBrand("Xiaomi")
-    //phone.brand="Xiaomi"
+    // the below create an instances of the classes and uses function "setter" to assign value to class
 
-    var car : Car= Car()
-    car.year=2025
-    car.model="Telsa"
-    car.maxSpeed= 450
-    car.setBrand("SmithVision")
-    //car.brand="SmithVision"
-    car.color="red"
+    var phone: Phone = Phone("Infinix","70by70") //
+    // var phone: Phone = Phone("Xiaomi")  the class Phone has two constructor with different numbers of argument
 
-    var engine : Engine =Engine()
-    engine.weightTon=4.5
-    engine.torque=456.6
-    engine.speedRpm=600.0
-    engine.powerMw=12200.00
-    //engine.application="Marine Propulsion"
-    engine.setApplication("Marine Propulsion")
+    phone.setRam(12)
+    phone.setColor("Crazie Blue")
+    phone.setStorage(520)
 
-    var animal : Animal = Animal()
-    animal.color="Black"
-    animal.isDomestic= true
-    animal.noOfLeg=4
-    animal.classs ="Mammal"
-    //animal.name="Cat"
-    animal.setName("Cat")
+    var car : Car= Car("SmithVision")
 
-    var drone :Drone = Drone()
-    drone.speed=788.66
-    //drone.isAutoMode = true
-    drone.setIsAutoMode(true)
-    drone.elevation =70.0
-    drone.long=70.90
-    drone.lat=60.66
+    car.setYear(2025)
+    car.setModel("Telsa")
+    car.setMaxSpeed(450)
+    car.setColor("red")
 
-    //the below uses the primitive getter that is a default method to get instance variables values of its class properties
-    println("${phone.getBrand()}\n${phone.storage}\n${phone.color}\n${phone.ram}\n${phone.size}")
+    var engine : Engine =Engine("Marine Application")
+
+    engine.setWeightTon(4.5)
+    engine.setTorque(456.6)
+    engine.setSpeedRpm(600.0)
+    engine.setPowerMw(12200.00)
+
+    var animal : Animal = Animal("Cat")
+
+    animal.setColor("Black")
+    animal.setIsDomestic(true)
+    animal.setNoOfLegs(4)
+    animal.setClasss("Mammal")
+
+    var drone :Drone = Drone(true)
+
+    drone.setSpeed(788.66)
+    drone.setElevation(70.0)
+    drone.setLong(70.90)
+    drone.setLat(60.66)
+
+    //the below uses the getter function to get values/properties of instance variables values and print out to the console
+    println("${phone.getBrand()}\n${phone.getStorage()}\n${phone.getColor()}\n${phone.getRam()}\n${phone.getSize()}")
     println()
-    println("${car.getBrand()}\n${car.color}\n${car.maxSpeed}\n${car.model}\n${car.year}")
+    println("${car.getBrand()}\n${car.getColor()}\n${car.getMaxSpeed()}\n${car.getModel()}\n${car.getYear()}")
     println()
-    println("${engine.getApplication()}\n${engine.powerMw}\n${engine.speedRpm}\n${engine.torque}\n${engine.weightTon}")
+    println("${engine.getApplication()}\n${engine.getPowerMw()}\n${engine.getSpeedRpm()}\n${engine.getTorque()}\n${engine.getWeightTon()}")
     println()
-    println("${animal.getName()}\n${animal.classs}\n${animal.noOfLeg}\n${animal.isDomestic}\n${animal.color}")
+    println("${animal.getName()}\n${animal.getClasss()}\n${animal.getNoOfLegs()}\n${animal.getIsDomestic()}\n${animal.getColor()}")
     println()
-    println("${drone.lat}\n${drone.long}\n${drone.elevation}\n${drone.speed}\n${drone.getIsAutoMode()}")
+    println("${drone.getLat()}\n${drone.getLong()}\n${drone.getElevation()}\n${drone.getSpeed()}\n${drone.getIsAutoMode()}")
 }

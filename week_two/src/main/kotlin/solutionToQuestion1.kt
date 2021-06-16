@@ -1,22 +1,18 @@
 fun main() {
 /*
-Define 10 if statements and
+Question 1-> Define 10 if statements and
 5 conditional expression using the when keyword
 */
 
-//Define 10 if statements
 /*
 the below is the syntax for defining an "if statement" in kotlin
     if (conditions) {
     statement/body
      }
  */
-
-    /*
-    the below line of if statements compares the assigned value of validUserInput
-    to a predetermine value and execute the body of the statement if true..
-     */
+    // Example below
     var validUserInput: Int = 0
+
     if (validUserInput == 1) {
 
     }
@@ -49,8 +45,23 @@ the below is the syntax for defining an "if statement" in kotlin
     }
 
 //5 conditional expression using the when keyword
+/*
+  the below are two the form of syntax for defining an "when expression/Statement" in kotlin
 
-// when used as statement
+    when {
+        condition -> statement/results
+        condition2 -> statement/results
+        else -> statement/results
+    }
+
+    when (conditions) {
+            cases-> statement/results
+            moreCases -> statement/results
+            else -> statement/results
+     }
+ */
+
+// 5 Examples of when expression/statements
     val x = 100
     val y = 10
 
@@ -65,7 +76,7 @@ the below is the syntax for defining an "if statement" in kotlin
         "^" -> println("$x ^ $y = ${Math.pow(x.toDouble(), y.toDouble())}")
     }
 
-// when used as expression
+//#2 when used as expression
     val ans: Int = 200
     val result: String = when (ans) {
         200 -> "Answer is right"
@@ -73,14 +84,15 @@ the below is the syntax for defining an "if statement" in kotlin
         else -> "Try again"
     }
 
-// when used as an expression and without argument
+//#3 when used as an expression and without argument
     var test: Boolean = false
-    val status = when {
+    val status : String= when {
         test == true -> "Result of test is positive"
         test == false -> "Result of test is negative"
         else -> "Unknown status"
     }
 
+//#4
     val daysOfWeek: Int = 3 // number equivalent to weekdays
 
     when {
@@ -94,7 +106,7 @@ the below is the syntax for defining an "if statement" in kotlin
         else -> println("Unknown Category")
     }
 
-    // when excuting a block of statement
+//#5 when executing a block of statement
     val constant: Int = 60
     var factor: Int = 2
     var outcome: Int = 0
