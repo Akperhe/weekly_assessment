@@ -86,7 +86,7 @@ the below is the syntax for defining an "if statement" in kotlin
 
 //#3 when used as an expression and without argument
     var test: Boolean = false
-    val status : String= when {
+    val status: String = when {
         test == true -> "Result of test is positive"
         test == false -> "Result of test is negative"
         else -> "Unknown status"

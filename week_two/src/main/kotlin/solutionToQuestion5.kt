@@ -6,35 +6,35 @@ accessing the values. NB: Use getters and setters.
 fun main() {
     // the below create an instances of the classes and uses function "setter" to assign value to class
 
-    var phone: Phone = Phone("Infinix","70by70") //
+    var phone: Phone = Phone("Infinix", "70by70") //
     // var phone: Phone = Phone("Xiaomi")  the class Phone has two constructor with different numbers of argument
 
     phone.setRam(12)
     phone.setColor("Crazie Blue")
     phone.setStorage(520)
 
-    var car : Car= Car("SmithVision")
+    var car: Car = Car("SmithVision")
 
     car.setYear(2025)
     car.setModel("Telsa")
     car.setMaxSpeed(450)
     car.setColor("red")
 
-    var engine : Engine =Engine("Marine Application")
+    var engine: Engine = Engine("Marine Application")
 
     engine.setWeightTon(4.5)
     engine.setTorque(456.6)
     engine.setSpeedRpm(600.0)
     engine.setPowerMw(12200.00)
 
-    var animal : Animal = Animal("Cat")
+    var animal: Animal = Animal("Cat")
 
     animal.setColor("Black")
     animal.setIsDomestic(true)
     animal.setNoOfLegs(4)
     animal.setClasss("Mammal")
 
-    var drone :Drone = Drone(true)
+    var drone: Drone = Drone(true)
 
     drone.setSpeed(788.66)
     drone.setElevation(70.0)
