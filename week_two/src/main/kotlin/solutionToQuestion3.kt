@@ -9,7 +9,7 @@ fun main() {
     for (i in 10..30) {
         if (i % 2 == 0 && i >= 10 && i <= 20)
             print("$i ")
-        if (i==20)
+        if (i == 20)
             println() // to jump to new line
         if (i % 2 == 1 && i >= 20 && i <= 30)
             print("$i ")

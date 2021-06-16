@@ -9,11 +9,11 @@ constructor.
 class Phone(_brand: String = "defualt") {
     // the above is a primary constructor
     // class instance variables
-    private var brand : String = _brand
-    private var ram : Int = 0
-    private var storage : Int =0
-    private var size : String = ""
-    private var color : String = ""
+    private var brand: String = _brand
+    private var ram: Int = 0
+    private var storage: Int = 0
+    private var size: String = ""
+    private var color: String = ""
 
     // initializer block
     init {
@@ -21,43 +21,48 @@ class Phone(_brand: String = "defualt") {
     }
 
     // secondary constructor
-    constructor(brand: String, size: String) : this(brand){
-        this.size=size
-    }
-
-    // Functions of setter and getters are declare below
-    fun getBrand() : String{
-        return brand
-    }
-    fun setBrand(brand : String) {
-         this.brand = brand
-    }
-
-    fun getRam() : Int{
-        return ram
-    }
-    fun setRam(ram : Int) {
-        this.ram = ram
-    }
-
-    fun getStorage() : Int{
-        return storage
-    }
-    fun setStorage(storage : Int) {
-        this.storage = storage
-    }
-
-    fun getSize() : String{
-        return size
-    }
-    fun setSize(size : String) {
+    constructor(brand: String, size: String) : this(brand) {
         this.size = size
     }
 
-    fun getColor() : String{
+    // Functions of setter and getters are declare below
+    fun getBrand(): String {
+        return brand
+    }
+
+    fun setBrand(brand: String) {
+        this.brand = brand
+    }
+
+    fun getRam(): Int {
+        return ram
+    }
+
+    fun setRam(ram: Int) {
+        this.ram = ram
+    }
+
+    fun getStorage(): Int {
+        return storage
+    }
+
+    fun setStorage(storage: Int) {
+        this.storage = storage
+    }
+
+    fun getSize(): String {
+        return size
+    }
+
+    fun setSize(size: String) {
+        this.size = size
+    }
+
+    fun getColor(): String {
         return color
     }
-    fun setColor(color : String) {
+
+    fun setColor(color: String) {
         this.color = color
     }
 }
@@ -65,11 +70,11 @@ class Phone(_brand: String = "defualt") {
 class Car(_brand: String = "") {
     // the above is a primary constructor
     //an example of instance variables
-    private var brand : String = _brand
-    private var model : String = ""
-    private var year : Int = 0
-    private var color : String = ""
-    private var maxSpeed : Int= 0
+    private var brand: String = _brand
+    private var model: String = ""
+    private var year: Int = 0
+    private var color: String = ""
+    private var maxSpeed: Int = 0
 
     // initializer block
     init {
@@ -78,49 +83,55 @@ class Car(_brand: String = "") {
     }
 
     // Functions of setter and getters are declare below
-    fun getBrand() : String{
+    fun getBrand(): String {
         return brand
     }
-    fun setBrand(brand : String) {
+
+    fun setBrand(brand: String) {
         this.brand = brand
     }
 
-    fun getModel() : String{
+    fun getModel(): String {
         return model
     }
-    fun setModel(model : String) {
+
+    fun setModel(model: String) {
         this.model = model
     }
 
-    fun getYear() : Int{
+    fun getYear(): Int {
         return year
     }
-    fun setYear(year : Int) {
+
+    fun setYear(year: Int) {
         this.year = year
     }
 
-    fun getColor() : String{
+    fun getColor(): String {
         return color
     }
-    fun setColor(color : String) {
+
+    fun setColor(color: String) {
         this.color = color
     }
-    fun getMaxSpeed() : Int{
+
+    fun getMaxSpeed(): Int {
         return maxSpeed
     }
-    fun setMaxSpeed(maxSpeed : Int) {
+
+    fun setMaxSpeed(maxSpeed: Int) {
         this.maxSpeed = maxSpeed
     }
 }
 
-class Engine( _application: String ="" ) {
+class Engine(_application: String = "") {
     // the above is a primary constructor
     //an example of instance variables
-    private var application : String = _application
-    private var speedRpm : Double = 0.0
-    private var powerMw : Double = 0.0
-    private var torque : Double = 0.0
-    private var weightTon : Double = 0.0
+    private var application: String = _application
+    private var speedRpm: Double = 0.0
+    private var powerMw: Double = 0.0
+    private var torque: Double = 0.0
+    private var weightTon: Double = 0.0
 
     // initializer block
     init {
@@ -128,38 +139,43 @@ class Engine( _application: String ="" ) {
     }
 
     // Functions of setter and getters are declare below
-    fun getApplication() : String{
+    fun getApplication(): String {
         return application
     }
-    fun setApplication(brand : String) {
+
+    fun setApplication(brand: String) {
         this.application = application
     }
 
-    fun getWeightTon() : Double{
+    fun getWeightTon(): Double {
         return weightTon
     }
-    fun setWeightTon(weightTon : Double) {
+
+    fun setWeightTon(weightTon: Double) {
         this.weightTon = weightTon
     }
 
-    fun getTorque() : Double{
+    fun getTorque(): Double {
         return torque
     }
-    fun setTorque(torque : Double) {
+
+    fun setTorque(torque: Double) {
         this.torque = torque
     }
 
-    fun getPowerMw() : Double{
+    fun getPowerMw(): Double {
         return powerMw
     }
-    fun setPowerMw(powerMw : Double) {
+
+    fun setPowerMw(powerMw: Double) {
         this.powerMw = powerMw
     }
 
-    fun getSpeedRpm() : Double{
+    fun getSpeedRpm(): Double {
         return speedRpm
     }
-    fun setSpeedRpm(speedRpm : Double) {
+
+    fun setSpeedRpm(speedRpm: Double) {
         this.speedRpm = speedRpm
     }
 }
@@ -167,66 +183,72 @@ class Engine( _application: String ="" ) {
 class Animal(_name: String = "Unknown") {
     // the above is a primary constructor
     //an example of instance variables
-    private var name : String = _name
-    private var classs : String = ""
-    private var isDomestic : Boolean = false
-    private var noOfLegs : Short = 0
-    private var color : String = ""
+    private var name: String = _name
+    private var classs: String = ""
+    private var isDomestic: Boolean = false
+    private var noOfLegs: Short = 0
+    private var color: String = ""
 
     // initializer block
     init {
         name = _name
     }
+
     // secondary constructor
-    constructor(noOfLegs : Short) : this() {
-        this.noOfLegs=noOfLegs
-    }
-
-    // Functions of setter and getters are declare below
-    fun getName() : String{
-        return name
-    }
-    fun setName(name : String) {
-        this.name = name
-    }
-
-    fun getClasss() : String{
-        return classs
-    }
-    fun setClasss(classs : String) {
-        this.classs = classs
-    }
-
-    fun getIsDomestic() : Boolean{
-        return isDomestic
-    }
-    fun setIsDomestic(isDomestic : Boolean) {
-        this.isDomestic = isDomestic
-    }
-
-    fun getNoOfLegs() : Short{
-        return noOfLegs
-    }
-    fun setNoOfLegs(noOfLegs : Short) {
+    constructor(noOfLegs: Short) : this() {
         this.noOfLegs = noOfLegs
     }
 
-    fun getColor() : String{
+    // Functions of setter and getters are declare below
+    fun getName(): String {
+        return name
+    }
+
+    fun setName(name: String) {
+        this.name = name
+    }
+
+    fun getClasss(): String {
+        return classs
+    }
+
+    fun setClasss(classs: String) {
+        this.classs = classs
+    }
+
+    fun getIsDomestic(): Boolean {
+        return isDomestic
+    }
+
+    fun setIsDomestic(isDomestic: Boolean) {
+        this.isDomestic = isDomestic
+    }
+
+    fun getNoOfLegs(): Short {
+        return noOfLegs
+    }
+
+    fun setNoOfLegs(noOfLegs: Short) {
+        this.noOfLegs = noOfLegs
+    }
+
+    fun getColor(): String {
         return color
     }
+
     fun setColor(color: String) {
         this.color = color
     }
 }
 
-class Drone (_isAutoMode: Boolean = false ) {
+class Drone(_isAutoMode: Boolean = false) {
     // the above is a primary constructor
     //an example of instance variables
-    private var lat : Double = 0.0
-    private var long : Double = 0.0
-    private var speed : Double= 0.0
-    private var elevation : Double = 0.0
-    private var isAutoMode : Boolean = false
+    private var lat: Double = 0.0
+    private var long: Double = 0.0
+    private var speed: Double = 0.0
+    private var elevation: Double = 0.0
+    private var isAutoMode: Boolean = false
 
     // initializer block
     init {
@@ -234,38 +256,43 @@ class Drone (_isAutoMode: Boolean = false ) {
     }
 
     // Functions of setter and getters are declare below
-    fun getIsAutoMode() : Boolean{
+    fun getIsAutoMode(): Boolean {
         return isAutoMode
     }
-    fun setIsAutoMode(isAutoMode : Boolean) {
+
+    fun setIsAutoMode(isAutoMode: Boolean) {
         this.isAutoMode = isAutoMode
     }
 
-    fun getElevation() : Double{
+    fun getElevation(): Double {
         return elevation
     }
-    fun setElevation(elevation :Double ) {
+
+    fun setElevation(elevation: Double) {
         this.elevation = elevation
     }
 
-    fun getSpeed() : Double{
+    fun getSpeed(): Double {
         return speed
     }
-    fun setSpeed(speed :Double ) {
+
+    fun setSpeed(speed: Double) {
         this.speed = speed
     }
 
-    fun getLong() : Double{
+    fun getLong(): Double {
         return long
     }
-    fun setLong(long :Double ) {
+
+    fun setLong(long: Double) {
         this.long = long
     }
 
-    fun getLat() : Double{
+    fun getLat(): Double {
         return lat
     }
-    fun setLat(lat :Double ) {
+
+    fun setLat(lat: Double) {
         this.lat = lat
     }
 }
